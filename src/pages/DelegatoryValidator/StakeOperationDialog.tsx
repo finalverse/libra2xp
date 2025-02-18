@@ -339,7 +339,7 @@ function StakeOperationDialogContent({
       </DialogContent>
       <DialogActions>
         <StyledTooltip
-          title={`Minimum stake amount is ${min} APT and maximum stake amount is ${
+          title={`Minimum stake amount is ${min} LIBRAand maximum stake amount is ${
             Number(balance) / OCTA
           } APT`}
           disableHoverListener={isAmountValid}
@@ -361,7 +361,7 @@ function StakeOperationDialogContent({
       <DialogContent sx={{textAlign: "center"}}>
         <Typography variant="caption" color={grey[450]}>
           <div>
-            Please do your own research. Aptos Labs is not responsible for the
+            Please do your own research. Libra2.org is not responsible for the
             performance of the validator nodes displayed here, or the security
             of your funds
           </div>
@@ -422,7 +422,7 @@ function StakeOperationDialogContent({
       <DialogContent sx={{textAlign: "center"}}>
         <Typography variant="caption" color={grey[450]}>
           <div>
-            Please do your own research. Aptos Labs is not responsible for the
+            Please do your own research. Libra2.org is not responsible for the
             security of your funds
           </div>
         </Typography>
@@ -474,7 +474,7 @@ function StakeOperationDialogContent({
       <DialogContent sx={{textAlign: "center"}}>
         <Typography variant="caption" color={grey[450]}>
           <div>
-            Please do your own research. Aptos Labs is not responsible for the
+            Please do your own research. Libra2.org is not responsible for the
             security of your funds
           </div>
         </Typography>

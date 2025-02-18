@@ -48,7 +48,7 @@ type VerifiedCellProps = {
 };
 
 export enum VerifiedType {
-  NATIVE_TOKEN = "Native", // Native token e.g. APT
+  NATIVE_TOKEN = "Native", // Native token e.g. LIBRA
   LABS_VERIFIED = "Verified", // Specifically verified by labs
   COMMUNITY_VERIFIED = "Community Verified", // Verified by Panora
   RECOGNIZED = "Recognized", // In panora list but not verified
@@ -155,7 +155,7 @@ export function getVerifiedMessageAndIcon(
   let icon = null;
   switch (level) {
     case VerifiedType.NATIVE_TOKEN:
-      tooltipMessage = `This asset is verified as a native token of Aptos.`;
+      tooltipMessage = `This asset is verified as a native token of Libra2.`;
       icon = <VerifiedUser fontSize="small" color="info" />;
       break;
     case VerifiedType.LABS_VERIFIED:

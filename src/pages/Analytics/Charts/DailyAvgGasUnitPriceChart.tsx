@@ -38,8 +38,8 @@ export default function DailyAvgGasUnitPriceChart({
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         tooltipsLabelFunc={(context: any) => {
           const priceInteger = Math.round(context.parsed.y).toString();
-          const priceInAPT = getFormattedBalanceStr(priceInteger, 8);
-          return `${priceInAPT} APT`;
+          const priceInLIBRA= getFormattedBalanceStr(priceInteger, 8);
+          return `${priceInAPT} LIBRA`;
         }}
       />
     </CardOutline>

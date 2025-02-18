@@ -24,7 +24,7 @@ export default function BalanceCard({address}: BalanceCardProps) {
         const fetchedPrice = await getPrice();
         setPrice(fetchedPrice);
       } catch (error) {
-        console.error("Error fetching APT price:", error);
+        console.error("Error fetching LIBRAprice:", error);
         setPrice(null);
       }
     };
@@ -40,9 +40,9 @@ export default function BalanceCard({address}: BalanceCardProps) {
   return balance.data ? (
     <Card height="auto">
       <Stack spacing={1.5} marginY={1}>
-        {/* APT balance */}
+        {/* LIBRAbalance */}
         <Typography fontSize={17} fontWeight={700}>
-          {`${getFormattedBalanceStr(balance.data)} APT`}
+          {`${getFormattedBalanceStr(balance.data)} LIBRA`}
         </Typography>
 
         {/* USD value */}
@@ -58,7 +58,7 @@ export default function BalanceCard({address}: BalanceCardProps) {
             Balance
           </Typography>
           <StyledTooltip
-            title={`This balance reflects the amount of APT tokens held in your wallet${globalState.network_name === "mainnet" ? ` and their live value in USD at a rate of 1 APT = $${price?.toFixed(2)}` : ""}.`}
+            title={`This balance reflects the amount of LIBRAtokens held in your wallet${globalState.network_name === "mainnet" ? ` and their live value in USD at a rate of 1 LIBRA= $${price?.toFixed(2)}` : ""}.`}
           >
             <InfoOutlinedIcon sx={{fontSize: 15, color: grey[450]}} />
           </StyledTooltip>

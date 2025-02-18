@@ -123,18 +123,18 @@ export const knownAddresses: Record<string, string> = {
   "0x0000000000000000000000000000000000000000000000000000000000000004":
     "Digital Assets (0x4)",
   "0x000000000000000000000000000000000000000000000000000000000000000A":
-    "Aptos Coin Fungible Asset",
+    "Libra2 Coin Fungible Asset",
   "0xdcc43c54a666493b6cbfc1ecc81af0bc24e9b75c5ab3a7065c1fc9632ee8bd82":
     "GovScan Voting",
   // Aptos labs
   "0x867ed1f6bf916171b1de3ee92849b8978b7d1b9e0a8cc982a3d19d535dfd9c0c":
-    "Aptos Name Service",
+    "Libra2 Name Service",
   "0x915efe6647e0440f927d46e39bcb5eb040a7e567e1756e002073bc6e26f2cd23":
-    "Aptos yr1: Graffio",
+    "Libra2 yr1: Graffio",
   "0x96c192a4e3c529f0f6b3567f1281676012ce65ba4bb0a9b20b46dec4e371cccd":
-    "Aptos yr2: NFT",
+    "Libra2 yr2: NFT",
   "0xee443c3b5ae14baaee87ea410a4badba1227dae386a616936aad88d053849638":
-    "Aptos Hongbao",
+    "Libra2 Hongbao",
   // bridge
   "0x5bc11445584a763c1fa7ed39081f1b920954da14e04b32440cba863d03e19625":
     "Wormhole Bridge",
@@ -317,7 +317,7 @@ export const knownAddresses: Record<string, string> = {
   "0x541e28fb12aa661a30358f2bebcd44460187ec918cb9cee075c2db86ee6aed93":
     "Tevi (TVS)", // fungible store for TVS asset
   "0x39673a89d85549ad0d7bef3f53510fe70be2d5abaac0d079330ade5548319b62":
-    "Only On Aptos NFT",
+    "Only On Libra2 NFT",
   "0x55f0ee4db1f09caf1bf49b2fb7298dba3a9da674108e26dc7adc78f8c94f298e":
     "Martian Wallet Fees",
   "0x407c4d644c0303f46f754b3ceaabf1e4af3f625a4936ae7e0f1c3e51082368ef":
@@ -352,10 +352,10 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     chainId: 1,
     tokenAddress: "0x1::aptos_coin::AptosCoin",
     faAddress: "0xa",
-    name: "Aptos Coin",
-    symbol: "APT",
+    name: "Libra2 Coin",
+    symbol: "LIBRA",
     decimals: 8,
-    panoraSymbol: "APT",
+    panoraSymbol: "LIBRA",
     bridge: null,
     logoUrl:
       "https://raw.githubusercontent.com/PanoraExchange/Aptos-Tokens/main/logos/APT.svg",
@@ -657,11 +657,11 @@ export const EMOJICOIN_REGISTRY_ADDRESS =
   "0x4b947ed016c64bde81972d69ea7d356de670d57fd2608b129f4d94ac0d0ee61";
 
 export const nativeTokens: Record<string, string> = {
-  "0x1::aptos_coin::AptosCoin": "APT",
-  "0x000000000000000000000000000000000000000000000000000000000000000a": "APT",
-  "0x000000000000000000000000000000000000000000000000000000000000000A": "APT",
-  "0xa": "APT",
-  "0xA": "APT",
+  "0x1::aptos_coin::AptosCoin": "LIBRA",
+  "0x000000000000000000000000000000000000000000000000000000000000000a": "LIBRA",
+  "0x000000000000000000000000000000000000000000000000000000000000000A": "LIBRA",
+  "0xa": "LIBRA",
+  "0xA": "LIBRA",
 };
 export const manuallyVerifiedTokens: Record<string, string> = {
   "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b": "USDt",
@@ -704,5 +704,5 @@ export const labsBannedAddresses: Record<string, string> = {
 };
 
 export const labsBannedTokenSymbols: Record<string, string> = {
-  APT: MARKED_AS_SCAM,
+  LIBRA: MARKED_AS_SCAM,
 };

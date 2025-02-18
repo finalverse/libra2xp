@@ -1,4 +1,4 @@
-# Aptos Explorer
+# Libra2 Blockchain Explorer - Libra2xp
 
 ## How to use
 

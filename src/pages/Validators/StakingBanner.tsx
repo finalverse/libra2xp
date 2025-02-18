@@ -57,7 +57,7 @@ export function StakingBanner() {
   );
 
   const text =
-    "Aptos enables delegations and staking services. See Staking for more details.";
+    "Libra2 enables delegations and staking services. See Staking for more details.";
 
   const children = isOnMobile ? (
     <Stack direction="column">

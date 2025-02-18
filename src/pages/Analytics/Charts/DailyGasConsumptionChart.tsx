@@ -35,8 +35,8 @@ export default function DailyGasConsumptionChart({
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         tooltipsLabelFunc={(context: any) => {
           const priceInteger = Math.round(context.parsed.y).toString();
-          const priceInAPT = getFormattedBalanceStr(priceInteger, 0);
-          return `${priceInAPT} APT`;
+          const priceInLIBRA= getFormattedBalanceStr(priceInteger, 0);
+          return `${priceInAPT} LIBRA`;
         }}
       />
     </CardOutline>

@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature request"
-about: Suggest a new feature in the Aptos Explorer
+about: Suggest a new feature in the Libra2 Explorer
 title: "[Feature Request] <Feature Title>"
 labels: enhancement
 assignees: ""

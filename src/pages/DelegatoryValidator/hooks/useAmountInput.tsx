@@ -63,16 +63,16 @@ const useAmountInput = (stakeOperation: StakeOperation) => {
             stakedAmount - Number(amount) < MINIMUM_APT_IN_POOL &&
             amount !== stakedAmount.toString()
           ) {
-            return `If you unlock ${amount} APT, your total staked amount ${stakedAmount} APT will be unlocked.`;
+            return `If you unlock ${amount} APT, your total staked amount ${stakedAmount} LIBRAwill be unlocked.`;
           } else if (
             amount &&
             unlockedAmount + Number(amount) < MINIMUM_APT_IN_POOL &&
             amount !== stakedAmount.toString()
           ) {
             if (stakedAmount - MINIMUM_APT_IN_POOL > MINIMUM_APT_IN_POOL) {
-              return `If you unlock ${amount} APT, ${MINIMUM_APT_IN_POOL} APT will be unlocked.`;
+              return `If you unlock ${amount} APT, ${MINIMUM_APT_IN_POOL} LIBRAwill be unlocked.`;
             } else {
-              return `If you unlock ${amount} APT, your total staked amount ${stakedAmount} APT will be unlocked.`;
+              return `If you unlock ${amount} APT, your total staked amount ${stakedAmount} LIBRAwill be unlocked.`;
             }
           }
           break;
@@ -89,22 +89,22 @@ const useAmountInput = (stakeOperation: StakeOperation) => {
             stakedAmount + Number(amount) < MINIMUM_APT_IN_POOL &&
             amount !== unlockedAmount.toString()
           ) {
-            return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} APT will be restaked.`;
+            return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} LIBRAwill be restaked.`;
           } else if (
             amount &&
             unlockedAmount - Number(amount) < MINIMUM_APT_IN_POOL &&
             amount !== unlockedAmount.toString()
           ) {
-            return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} APT will be restaked.`;
+            return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} LIBRAwill be restaked.`;
           } else if (
             amount &&
             stakedAmount + Number(amount) < MINIMUM_APT_IN_POOL &&
             amount !== unlockedAmount.toString()
           ) {
             if (unlockedAmount - MINIMUM_APT_IN_POOL > MINIMUM_APT_IN_POOL) {
-              return `If you restake ${amount} APT, ${MINIMUM_APT_IN_POOL} APT will be restaked.`;
+              return `If you restake ${amount} APT, ${MINIMUM_APT_IN_POOL} LIBRAwill be restaked.`;
             } else {
-              return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} APT will be restaked.`;
+              return `If you restake ${amount} APT, your total unlocked amount ${unlockedAmount} LIBRAwill be restaked.`;
             }
           }
           break;

@@ -64,7 +64,7 @@ export default function Footer() {
               color="inherit"
               to="https://aptoslabs.com/"
               target="_blank"
-              title="Aptos Labs"
+              title="Libra2.org"
               sx={{width: "8rem", mr: {md: 2}}}
             >
               <LogoFull />
@@ -82,7 +82,7 @@ export default function Footer() {
               >
                 © {new Date().getFullYear()}{" "}
                 <Box component="span" sx={{whiteSpace: "nowrap"}}>
-                  Aptos Labs
+                  Libra2.org
                 </Box>
               </Typography>
               <Stack

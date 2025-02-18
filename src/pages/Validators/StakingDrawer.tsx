@@ -21,9 +21,9 @@ const faqStakingData = [
     question: "What is delegated staking?",
     answer: (
       <React.Fragment>
-        As an APT holder, you can 'delegate' your APT to a delegation pool. The
-        total delegation pool is an aggregation of staked APT from various token
-        owners, and collectively staked. Aptos is a proof-of-stake network,
+        As an LIBRAholder, you can 'delegate' your LIBRAto a delegation pool. The
+        total delegation pool is an aggregation of staked LIBRAfrom various token
+        owners, and collectively staked. Libra2 is a proof-of-stake network,
         which means that tokens are staked to{" "}
         <Link to={"#validators-section"}>validators</Link> in order to keep the
         network healthy.
@@ -38,19 +38,19 @@ const faqStakingData = [
     ),
   },
   {
-    question: "Can anyone stake APT?",
-    answer: "Yes, anyone can stake APT.",
+    question: "Can anyone stake LIBRA?",
+    answer: "Yes, anyone can stake LIBRA.",
   },
   {
     question: "Is there a minimum stake?",
     answer:
-      "11 APT is the required minimum amount to stake. A refundable stake fee is deducted from the stake amount and returned at the end of the epoch.",
+      "11 LIBRAis the required minimum amount to stake. A refundable stake fee is deducted from the stake amount and returned at the end of the epoch.",
   },
   {
-    question: "How can I stake APT?",
+    question: "How can I stake LIBRA?",
     answer: (
       <React.Fragment>
-        You can stake APT directly by going to the{" "}
+        You can stake LIBRAdirectly by going to the{" "}
         <Link to={"/validators/delegation"}>Explorer</Link> page and connecting
         your wallet. If you are using the Petra wallet, you should see the
         following flow:
@@ -59,22 +59,22 @@ const faqStakingData = [
         <ol style={{marginLeft: "1em"}}>
           <li>
             Visit Explorer’s validators page and select the delegations node
-            that you’d like to stake your APTs to.
+            that you’d like to stake your LIBRAs to.
           </li>
           <li>
-            In the validator detail page, click “Stake” to starting staking APT
+            In the validator detail page, click “Stake” to starting staking LIBRA
             with this validator.
           </li>
           <li>
             If you haven’t connected the wallet, you will be prompted to connect
             your Petra wallet first. Once you connect your wallet, you may start
-            staking your APT through the stake dialog and approve transactions
+            staking your LIBRAthrough the stake dialog and approve transactions
             in your wallet.
           </li>
         </ol>
         <br />
-        Congratulations! You have successfully staked APT on Explorer! You can
-        also stake APT directly to a validator node through the{" "}
+        Congratulations! You have successfully staked LIBRAon Explorer! You can
+        also stake LIBRAdirectly to a validator node through the{" "}
         <Link
           to="https://aptos.dev/en/network/nodes/validator-node/connect-nodes/delegation-pool-operations#perform-delegation-pool-operations"
           target="_blank"
@@ -86,9 +86,9 @@ const faqStakingData = [
     ),
   },
   {
-    question: "Can I unstake my APT anytime?",
+    question: "Can I unstake my LIBRAanytime?",
     answer:
-      "You can unstake your APT at any time, but the funds will not be available until the next validator unlock date. The validator unlock period is 14 days, but the timing follows from when the delegation pool is initiated. Depending on when in the cycle you choose to unstake your APT, it could be as little as a few hours, or up to 14 days from whence you can withdraw your tokens. I.e. if you unstake 10 days into the 14 day cycle, you have to wait 4 days. If you unstake 8 days into the 14 day cycle, you have to wait 6 days. If you unstaked your tokens, and the the unlock date has passed, you will be able to withdraw the tokens.",
+      "You can unstake your LIBRAat any time, but the funds will not be available until the next validator unlock date. The validator unlock period is 14 days, but the timing follows from when the delegation pool is initiated. Depending on when in the cycle you choose to unstake your LIBRA, it could be as little as a few hours, or up to 14 days from whence you can withdraw your tokens. I.e. if you unstake 10 days into the 14 day cycle, you have to wait 4 days. If you unstake 8 days into the 14 day cycle, you have to wait 6 days. If you unstaked your tokens, and the the unlock date has passed, you will be able to withdraw the tokens.",
   },
   {
     question: "When can I withdraw funds?",
@@ -97,8 +97,8 @@ const faqStakingData = [
         There are two actions that you need to take: unstake and withdraw.{" "}
         <br />
         <br />
-        You can withdraw unstaked APT at any time as long as it is unlocked. If
-        you have staked APT, you will have to unstake first and wait for the
+        You can withdraw unstaked LIBRAat any time as long as it is unlocked. If
+        you have staked LIBRA, you will have to unstake first and wait for the
         funds to become unlocked. At that point in time, you can then withdraw
         it.
         <br />
@@ -138,9 +138,9 @@ const faqStakingData = [
 
 const faqRewardsData = [
   {
-    question: "How can I earn rewards by staking APT?",
+    question: "How can I earn rewards by staking LIBRA?",
     answer:
-      "You can earn rewards based on the amount of APT you have staked. Your node operator takes a commission, so the rewards you accrue will be net of that.",
+      "You can earn rewards based on the amount of LIBRAyou have staked. Your node operator takes a commission, so the rewards you accrue will be net of that.",
   },
   {
     question: "Can the operator change their commission rate?",
@@ -150,7 +150,7 @@ const faqRewardsData = [
   {
     question: "How much can I expect to earn?",
     answer:
-      "The rewards you earn are calculated based on the amount of APT you have staked multiplied by the current annual rewards rate and the validator rewards performance minus the operator’s commission rate.",
+      "The rewards you earn are calculated based on the amount of LIBRAyou have staked multiplied by the current annual rewards rate and the validator rewards performance minus the operator’s commission rate.",
   },
   {
     question: "When do I start earning rewards?",
@@ -171,7 +171,7 @@ const faqValidatorData = [
       <React.Fragment>
         Validator nodes confirm transactions by proposing and executing blocks
         on the network. The stake that they hold helps to prove that they are
-        trusted to vote on transactions. You can read more about how the Aptos
+        trusted to vote on transactions. You can read more about how the Libra2
         blockchain works{" "}
         <Link
           to={
@@ -194,10 +194,10 @@ const faqValidatorData = [
         <br />
         <br />
         Validators start earning rewards when the delegation pool has at least
-        1M APT. Only active validators will earn rewards.
+        1M LIBRA. Only active validators will earn rewards.
         <br />
         <br />
-        However, please do your own research, Aptos labs is not responsible for
+        However, please do your own research, Libra2 is not responsible for
         the veracity of the information displayed, nor responsible for the
         security of your funds, past or future performance of the validator
         node.
